@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Poppins:wght@400;500;600&family=Titillium+Web&display=swap');
+
+* {
+    letter-spacing: .14em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.nav-item a {
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+nav .navbar-nav .nav-link {
+    color: black !important;
+}
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header {
+    margin: 3vw;
+
+}
+
+header .navbar {
+    padding: 30px 0;
+}
+
+.main-menu {
+    transform: translateY(30%);
+}
+
+.font {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+}
+
+@media (min-width:768px) {
+    .font {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: initial;
+        font-weight: 700;
+    }
+}
+
+nav a {
+    color: black;
+}
+
+/* The Mobile Menu that appears on click */
+.mobile-menu {
+    width: 100%;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    min-height: 100%;
+    height: 100%;
+    background: white;
+    margin: 0;
+    position: fixed;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        float: right;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        min-height: auto;
+        height: auto;
+        padding: 0;
+        width: auto;
+        background: transparent;
+        display: block;
+    }
+
+
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Navigation in header for desktop */
+
+
+@media (min-width: 768px) {
+    .main-menu {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.main-menu__item {
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .main-menu__item {
+        float: left;
+        display: block;
+    }
+}
+
+.main-menu__link {
+    border-bottom: 0;
+    color: white;
+    font: bold 15px/15px Arial;
+    display: block;
+    padding: 20px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .main-menu__link {
+        float: left;
+        color: black;
+    }
+}
+
+.main-menu__link:hover,
+.main-menu__link:focus,
+.main-menu__link:active {
+    border-bottom: 0;
+    background: black;
+    color: white;
+}
+
+/* Hamburger Button - Animation courtesy of https://codepen.io/designcouch/pen/Atyop - more examples in this link */
+.open-button {
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    border-bottom: 0;
+    right: 100px;
+    z-index: 9999;
+    border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .open-button {
+        display: none;
+    }
+}
+
+.open-button:hover {
+    border-bottom: 0;
+}
+
+.open-button span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.open-button span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.open-button span:nth-child(2) {
+    top: 10px;
+    transform-origin: left center;
+}
+
+.open-button span:nth-child(3) {
+    top: 20px;
+    transform-origin: left center;
+}
+
+.open-button.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.open-button.open span:nth-child(2) {
+    width: 0;
+    transition: all 0.7s ease;
+}
+
+.open-button.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+    left: 8px;
+}
+
+/* Header styling Ends*/
