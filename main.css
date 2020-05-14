@@ -36,7 +36,7 @@ header .navbar {
 }
 
 .main-menu {
-    transform: translateY(30%);
+    transform: translateY(20%);
 }
 
 .font {
@@ -216,3 +216,56 @@ a {
 }
 
 /* Header styling Ends*/
+
+
+/*main index content starts*/
+
+#WS-one{
+    background-image: url(assets/Illustration/AppDesign.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#WS-one, #WS-two, #WS-four, #WS-five, #WS-seven, #WS-eight, #WS-ten, #WS-eleven{
+    height: 485px;
+}
+
+.WorkSample{
+    background-size: cover;
+    background-position: center;
+}
+
+#WS-two{
+    background-image: url(assets/Illustration/Cartoon.jpg);
+}
+
+#WS-three{
+    background-image: url(assets/Photo/Photo2.JPG);
+    background-position: initial;
+}
+
+#WS-three, #WS-six, #WS-nine, #WS-twelve{
+    height: 375px;
+}
+
+#WS-four{
+    background-image: url(assets/Photoshop/Fashion\ Collage.jpg);
+}
+
+#WS-five{
+    background-image: url(assets/Photoshop/Poster.jpg);
+}
+
+#WS-six{
+    background-image: url(assets/Photo/Photo1.JPG);
+    background-position: initial;
+}
+
+#WS-seven{
+    background-image: url(assets/WebDesign/BlueNovation.png);
+}
+
+#WS-eight{
+    background-image: url(assets/WebDesign/Graff.png);
+}
+
