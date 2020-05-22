@@ -326,7 +326,7 @@ footer {
     font-family: 'Quicksand', sans-serif;
 }
 .infoContainer #info-head {
-    margin: 0 auto 120px;
+    margin: 25px auto 80px;
     font-weight: 700;
     font-size: 31px;
 }
