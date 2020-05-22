@@ -28,8 +28,15 @@ header .logo {
     font-weight: 700;
     text-transform: uppercase;
 }
+.logo img{
+    width: 150px;
+}
 
-
+@media (min-width:768px){
+    .logo img{
+        width: 122px;
+    }
+}
 header .navbar {
     padding: 30px 25px;
 }
@@ -163,7 +170,7 @@ a {
 /* Hamburger Button - Animation courtesy of https://codepen.io/designcouch/pen/Atyop - more examples in this link */
 .open-button {
     width: 30px;
-    height: 30px;
+    height: 25px;
     transform: rotate(0deg);
     transition: 1s ease-in-out;
     cursor: pointer;
